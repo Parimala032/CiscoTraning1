@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="CRUD.CSS">
+    <script src=https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js></script>
+</head>
+<body>
+    <h1>USER DATA INFORMATION</h1>
+    <div id="container">
+        <center>
+            <form id="addForm">
+                <input type="hidden" id="editingIndex" value="-1">
+                <label for="nameInput"><b>NAME:</b></label>
+                <input type="text" id="nameInput" placeholder="Enter Name" required>
+                <label for="contactInput"><b>CONTACT:</b></label>
+                <input type="tel" id="contactInput" placeholder="Enter Contact Number" required>
+                <label for="detailsInput"><b>DETAILS:</b></label>
+                <textarea id="detailsInput" placeholder="Enter Details" required></textarea>
+            </form>
+            <button id="addButton" type="button" onclick="addData()">ADD DATA</button>
+            <button id="saveButton" class="hide" type="button" onclick="saveData()">Save</button>
+        </center>
+    </div>
+    <table id="infotable">
+        <thead>
+            <tr>
+                <th>NO:</th>
+                <th>NAME:</th>
+                <th>CONTACT:</th>
+                <th>DETAILS:</th>
+                <th>ACTIONS:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Static data will be loaded here -->
+        </tbody>
+    </table>
+    <script src="CRUD.js"></script>
+</body>
+</html>
+
