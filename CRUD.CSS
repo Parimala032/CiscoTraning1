@@ -1,0 +1,67 @@
+body{
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    background-color: rgb(255, 228, 196);
+}
+h1{
+    border-bottom-style: solid;
+    padding-bottom: 12px;
+    color: rgb(255, 0, 25);
+    border-bottom-color: blue;
+    font-style: italic;
+    text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 7px;
+}
+table {
+    margin: 4rem ;
+    width: 90%;
+}
+th {
+    background-color: aqua;
+}
+td {
+    background-color: aliceblue;
+}
+input,textarea{
+    width: 250px;
+    padding: 8px;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 4px;
+}
+label { 
+    display: block; 
+    margin-top: 15px; 
+    color:rgb(255, 0, 157);
+}
+.edit-button,#addButton{
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.delete-button,#saveButton{
+    margin: 10px;
+    padding: 8px 16px;
+    background-color: #e71010;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover{
+    color: lightgreen;
+}
+.hide {
+    display: none;
+}
